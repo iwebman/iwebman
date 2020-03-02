@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 #404
-ErrorDocument 404 /errors/404
+ErrorDocument 404 /404
