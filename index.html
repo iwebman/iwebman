@@ -1,169 +1,108 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf8"/>
-<style>
-@font-face {
-	font-family: iranyekan;
-	font-style: normal;
-	font-weight: bold;
-	src: url('fonts/eot/iranyekanwebbold.eot');
-	src: url('fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/iranyekanwebbold.ttf') format('truetype');
-}
-@font-face {
-	font-family: iranyekan;
-	font-style: normal;
-	font-weight: 300;
-	src: url('fonts/eot/iranyekanweblight.eot');
-	src: url('fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/iranyekanweblight.ttf') format('truetype');
-}
-@font-face {
-	font-family: iranyekan;
-	font-style: normal;
-	font-weight: normal;
-	src: url('fonts/eot/iranyekanwebregular.eot');
-	src: url('fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/iranyekanwebregular.ttf') format('truetype');
-}
-
-/* Latin fonts (Roboto) */
-@font-face {
-	font-family: roboto;
-	font-style: normal;
-	font-weight: bold;
-	src: url('fonts/eot/robotobold.eot');
-	src: url('fonts/eot/robotobold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/robotobold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/robotobold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/robotobold.ttf') format('truetype');
-}
-@font-face {
-	font-family: roboto;
-	font-style: normal;
-	font-weight: 300;
-	src: url('fonts/eot/robotolight.eot');
-	src: url('fonts/eot/robotolight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/robotolight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/robotolight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/robotolight.ttf') format('truetype');
-}
-@font-face {
-	font-family: roboto;
-	font-style: normal;
-	font-weight: normal;
-	src: url('fonts/eot/robotoregular.eot');
-	src: url('fonts/eot/robotoregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('fonts/woff2/robotoregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('fonts/woff/robotoregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-		 url('fonts/ttf/robotoregular.ttf') format('truetype');
-}
-body, html {
-    height: 100%;
-    margin: 0;
-    direction:rtl;
-    font-family:iranyekan;
-}
-.bgimg {
-    background-image: url('MiladTower.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-size: 25px;
-}
-.topright {
-    position: absolute;
-    top: 0;
-    right: 16px;
-}
-.bottomright {
-    position: absolute;
-    bottom: 0;
-    right: 16px;
-    font-size:14px;
-}
-.bottommiddle{
-  position: fixed;
-  text-align: center;
-  bottom:0px;
-  font-size:14px;
-  margin-right: auto;
-  margin-left: auto;
-  bottom: 0%;
-  left: 50%;
-}
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 17px;
-    background-color: #201f1f40;
-    padding: 10px;
-}
-hr {
-    margin: auto;
-    width: 60%;
-}
-</style>
-</head>
-<body>
-<div class="bgimg">
-    <div class="topright">
-        <p>سلام؛ خیلی خوش اومدید، من علیرضا هستم و در حال آماده سازی این وبسایت. با من همراه باشید.</p>
-    </div>
-    <div class="middle">
-        <h3>ایمیل من جهت ارتباط بیشتر :</h3>
-        <hr>
-        <h3>Email : alirezadamash X gmail.com</h3>
-        <hr>
-        <p>ایکس همون @ هست این قد که spam زیاده شده دیگه باید خلاقیت به خرج بدیم:)</p>
-        <p style="direction:ltr;font-size:30px;font-family:iranyekan" id="iwebman"></p>
-    </div>
-    <div class="bottomright">
-        <p>بعد از اینکه که این مطلب را خواندید متوجه خواهید شد که مغز شما حروف اضافه را حذف می کند و شما حرف "که" اضافه را نخواندید</p>
-	    <p style="text-align:left;">Photo by Arman Taherian on Unsplash</p>
-    </div>
-</div>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("June 30, 2020 00:00:00").getTime();
-
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("iwebman").innerHTML = days + " " + hours + " "
-    + minutes + " " + seconds + " ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("iwebamn").innerHTML = "پایان زمان رسمی پروژه و شروع راه اندازی سایت";
-    }
-}, 1000);
-</script>
-</body>
+<html lang="fa">
+	<head>
+		<title>IWEBMAN -  Internet - Web - humManinty</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="طراحی و توسعه وب">
+		<meta name="author" content="iwebman">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="icon" href="favicon.ico">
+	</head>
+	<body>
+		<div class="container">		
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand d-lg-none" href="#">IWebMan</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-02">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-md-center" id="navigations-02">
+					<div class="row w-100">
+						<div class="col-4 pl-lg-0">
+							<ul class="navbar-nav">
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link active" href="#">تماس با ما<span class="sr-only">تماس با ما</span></a></li>
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link" href="#">نمونه کارها</a></li>
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link" href="#">پشتیبانی</a></li>
+							</ul>
+						</div>
+						<div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block">
+							<a class="navbar-brand mr-0" href="#" style="border:1px solid #bfbfbf; margin: 0 5px;padding:10px;">Internet Web huManity</a>
+						</div>
+						<div class="col-4 pr-lg-0">
+							<ul class="navbar-nav justify-content-end">
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link" href="#">درباره ما</a></li>
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link" href="#">تیم کاری</a></li>
+								<li class="nav-item" style="border:1px solid #bfbfbf; margin: 0 5px;"><a class="nav-link" href="#">تخصص ها</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section class="py-5" style="background-color:#e8e8e8;">
+				<div class="text-center">
+					<h2>طراحی و توسعه وب اپلیکیشن</h2>
+					<img class="img-fluid my-4" src="img/main.jpg" alt="">
+					<div class="row mt-5 text-right">
+						<div class="col-md-4 d-flex align-items-start">
+							<img class="mr-2 mt-2" src="placeholder/icons/check.svg" alt="">
+							<div>
+								<h3 class="mb-3"> امنیت </h3>
+								<p>امنیت مهمترین بخش توسعه نرم افزار است که برای تیم ما در اولویت قرار دارد.</p>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex align-items-start">
+							<img class="mr-2 mt-2" src="placeholder/icons/check.svg" alt="">
+							<div>
+								<h3 class="mb-3"> تکنولوژی </h3>
+								<p>تمامی اعضای تیم ما با بروزترین تکنولوژی های وب کار میکنند، بنابراین تمامی نرم افزارها بروز هستند.</p>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex align-items-start">
+							<img class="mr-2 mt-2" src="placeholder/icons/check.svg" alt="">
+							<div>
+								<h3 class="mb-3"> سرعت </h3>
+								<p>زیبایی یک نرم افزار به سریع بودن آن است، ما روش هایی رو بلدیم که این امر رو محقق میکنه</p>
+							</div>
+						</div>
+					</div>
+					<a class="btn btn-primary mt-4" href="#">پروژه های انجام شده</a>
+				</div>
+			</section>	
+			<section class="py-5" style="background-color:#e8e8e8;">
+				<div class="container text-center">
+					<strong>توسعه نرم افزار با بروزترین تکنولوژی ها</strong>
+					<h3 class="display-8 my-3">تیم ما از بچه های حرفه ای و کاربلد تشکیل شده، عاشق و دلخسته وب و خوره تکنولوژی های روز</h3>
+					<a class="btn btn-primary my-2" href="#">تیم ما</a>
+				</div>
+			</section>	
+			<section class="py-5">
+				<h2 class="mb-5 text-center">خوشحال خواهیم شد با شما بیشتر در ارتباط باشیم :)</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 mb-3 mb-md-0"><img class="img-fluid" src="img/contact.jpg" alt=""></div>
+						<div class="col-md-6">
+							<form>
+								<label class="sr-only" for="input-contacts-02">ایمیل</label>
+								<input class="form-control mb-3" id="input-contacts-02" type="email" placeholder="ایمیل">
+								<select class="form-control mb-3">
+									<option disabled selected>قسمت</option>
+									<option>پشتیبانی</option>
+									<option>فروش</option>
+									<option>فنی</option>
+								</select>
+								<label class="sr-only" for="textarea-contacts-02">پیامتون رو اینجا تایپ کنید ...</label>
+								<textarea class="form-control mb-3" id="textarea-contacts-02" rows="3" placeholder="پیامتون رو اینجا تایپ کنید ..."></textarea>
+								<button class="btn btn-primary btn-block" type="submit">ارسال</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
