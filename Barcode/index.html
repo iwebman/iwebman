@@ -237,6 +237,14 @@
                 clickable: true,
             },
         });
+        // Add an event listener for the Enter key
+document.getElementById("barcodeInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent form submission (default action)
+        document.querySelector("button").click(); // Programmatically click the Check button
+    }
+});
+
     </script>
 </body>
 </html>
