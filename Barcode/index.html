@@ -25,25 +25,62 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background: linear-gradient(to right, #e9ecef, #f8f9fa);
         }
         main {
             flex: 1;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
         }
-        .glass-box {
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        footer {
+            background-color: #425563;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+        .swiper-container {
+            max-width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .swiper-slide {
+            position: relative;
+        }
+        .swiper-pagination {
+            position: static;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .slider-line {
+            border-top: 2px solid #d1d1d1;
+            margin-top: 20px;
+        }
+        .container_main {
+            border: 0px solid #edeaea;
+            background-color: #fff;
+            max-width: 1240px;
+            width: 92.5%;
+            padding: 20px;
+            padding-top: 0;
+            margin: 0 auto;
+        }
+        .slider-container{
+            max-width: 1240px;
+            width: 92.5%;
+            padding-top: 0;
+            margin: 0 auto;
         }
     </style>
 </head>
-<body class="bg-gradient-to-r text-gray-800">
+<body>
     <!-- Navbar -->
     <nav class="bg-[#00A587] text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="flex justify-between items-center px-6 slider-container">
             <div class="flex items-center">
-                <img src="img/pf_logo.svg" alt="PEPPERl-FUCHS" class="h-10 mr-3">
-                <span class="text-xl font-semibold">PEPPERl-FUCHS</span>
+                <img src="img/pf_logo.svg" alt="PEPPERL-FUCHS" class="h-10 mr-3">
+                <span class="text-xl font-semibold">PEPPERL+FUCHS</span>
             </div>
             <ul class="hidden md:flex space-x-6">
                 <li><a href="#" class="hover:text-gray-200">Home</a></li>
@@ -53,87 +90,101 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Slider -->
-    <div class="swiper-container my-6">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <img src="img/slider1.jpg" alt="Slide 1" class="w-full">
-                <div class="absolute bottom-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
-                    <h2 class="text-xl font-bold text-[#00A587]">Innovative Solutions</h2>
-                    <p class="text-gray-700">Explore our cutting-edge technologies tailored to meet your needs.</p>
+    <!-- Slider Section -->
+    <div class="slider-container">    
+            <div class="swiper-container my-6">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="absolute top-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
+                            <h2 class="text-xl font-bold text-[#00A587]">Innovative Solutions</h2>
+                            <p class="text-gray-700">Explore our cutting-edge technologies tailored to meet your needs.</p>
+                        </div>
+                        <img src="img/slider1.jpg" alt="Slide 1" class="w-full">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="absolute top-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
+                            <h2 class="text-xl font-bold text-[#00A587]">Advanced Products</h2>
+                            <p class="text-gray-700">Discover our range of high-quality products designed for excellence.</p>
+                        </div>
+                        <img src="img/slider2.jpg" alt="Slide 2" class="w-full">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="absolute top-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
+                            <h2 class="text-xl font-bold text-[#00A587]">Exceptional Service</h2>
+                            <p class="text-gray-700">Our team is here to support you every step of the way.</p>
+                        </div>
+                        <img src="img/slider3.jpg" alt="Slide 3" class="w-full">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="absolute top-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
+                            <h2 class="text-xl font-bold text-[#00A587]">Smart Solutions</h2>
+                            <p class="text-gray-700">Innovative designs that redefine efficiency and reliability.</p>
+                        </div>
+                        <img src="img/slider4.jpg" alt="Slide 4" class="w-full">
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="absolute top-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
+                            <h2 class="text-xl font-bold text-[#00A587]">Future Ready</h2>
+                            <p class="text-gray-700">Solutions designed for the next generation of industries.</p>
+                        </div>
+                        <img src="img/slider5.gif" alt="Slide 5" class="w-full">
+                    </div>
                 </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <img src="img/slider2.jpg" alt="Slide 2" class="w-full">
-                <div class="absolute bottom-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
-                    <h2 class="text-xl font-bold text-[#00A587]">Advanced Products</h2>
-                    <p class="text-gray-700">Discover our range of high-quality products designed for excellence.</p>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-                <img src="img/slider3.jpg" alt="Slide 3" class="w-full">
-                <div class="absolute bottom-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
-                    <h2 class="text-xl font-bold text-[#00A587]">Exceptional Service</h2>
-                    <p class="text-gray-700">Our team is here to support you every step of the way.</p>
-                </div>
-            </div>
-             <!-- Slide 4 -->
-            <div class="swiper-slide">
-                <img src="img/slider4.jpg" alt="Slide 4" class="w-full">
-                <div class="absolute bottom-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
-                    <h2 class="text-xl font-bold text-[#00A587]">Exceptional Service</h2>
-                    <p class="text-gray-700">Our team is here to support you every step of the way.</p>
-                </div>
-            </div>
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-                <img src="img/slider5.gif" alt="Slide 5" class="w-full">
-                <div class="absolute bottom-6 left-6 bg-white bg-opacity-75 p-4 rounded-lg">
-                    <h2 class="text-xl font-bold text-[#00A587]">Exceptional Service</h2>
-                    <p class="text-gray-700">Our team is here to support you every step of the way.</p>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="slider-line"></div>
             </div>
         </div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-
     <!-- Main Content -->
-    <main class="flex justify-center items-center py-10">
-        <div class="glass-box rounded-lg p-8 text-center max-w-md w-full">
-            <img src="img/product.png" alt="Product Image" class="mx-auto mb-6">
-            <h1 class="text-2xl font-bold mb-4">Product Barcode Checker</h1>
-            <div class="relative mb-4">
-                <input 
-                    type="text" 
-                    id="barcodeInput" 
-                    placeholder="Enter barcode number" 
-                    oninput="validateInput(event)"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#00A587] focus:border-[#00A587] text-gray-700">
-                <img 
-                    src="https://cdn-icons-png.flaticon.com/512/42/42935.png" 
-                    alt="Barcode Icon" 
-                    class="absolute right-3 top-1/2 transform -translate-y-1/2 w-6 opacity-50">
+    <main class="py-10 px-6 container_main">
+            <!-- Industrial Sensors Section -->
+            <div class="container_categorie mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Industrial Sensors</h2>
+                <div class="text-lg text-gray-700 mb-6">
+                    <p>As a pioneer and innovator in the field of industrial sensors, we seamlessly integrate into your factory automation applications.</p>
+                </div>
+                <div class="flex justify-center">
+                    <img 
+                        src="img/products.jpg" 
+                        alt="Industrial Sensors" 
+                        class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
             </div>
-            <button 
-                onclick="checkBarcode()" 
-                class="w-full bg-[#00A587] hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                Check
-            </button>
-            <div id="message" class="mt-4 text-lg font-semibold"></div>
-        </div>
+
+            <!-- Barcode Checker Section -->
+            <div class="glass-box bg-white rounded-lg shadow-md p-8 max-w-xl mx-auto">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Product Barcode Checker</h1>
+                <p class="text-gray-700 mb-6">
+                    Validate your product's authenticity by entering its barcode below. Our barcode checker ensures reliability and accuracy.
+                </p>
+                <div class="relative mb-4">
+                    <input 
+                        type="text" 
+                        id="barcodeInput" 
+                        placeholder="Enter barcode number" 
+                        oninput="validateInput(event)"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-[#00A587] focus:border-[#00A587] text-gray-700">
+                    <img 
+                        src="https://cdn-icons-png.flaticon.com/512/42/42935.png" 
+                        alt="Barcode Icon" 
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 w-6 opacity-50">
+                </div>
+                <button 
+                    onclick="checkBarcode()" 
+                    class="w-full bg-[#00A587] hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition">
+                    Check
+                </button>
+                <div id="message" class="mt-4 text-lg font-semibold"></div>
+            </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2024 PEPPERl-FUCHS. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2024 PEPPERL-FUCHS. All Rights Reserved.</p>
     </footer>
 
     <script>
@@ -143,7 +194,7 @@
 
         function validateInput(event) {
             const inputField = event.target;
-            inputField.value = inputField.value.replace(/\D/g, ''); 
+            inputField.value = inputField.value.replace(/\D/g, '');
         }
 
         function checkBarcode() {
@@ -164,14 +215,6 @@
             }
         }
 
-        document.getElementById("barcodeInput").addEventListener("keydown", function (event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                document.querySelector("button").click();
-            }
-        });
-
-        // Initialize Swiper
         const swiper = new Swiper('.swiper-container', {
             loop: true,
             autoplay: {
@@ -181,10 +224,6 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
             },
         });
     </script>

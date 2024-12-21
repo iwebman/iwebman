@@ -23,9 +23,29 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background: linear-gradient(to right, #e9ecef, #f8f9fa);
         }
         main {
             flex: 1;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+        footer {
+            background-color: #425563;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+        .container_main {
+            border: 0px solid #edeaea;
+            background-color: #fff;
+            max-width: 1240px;
+            width: 92.5%;
+            padding: 20px;
+            padding-top: 0;
+            margin: 0 auto;
         }
         .glass-box {
             background: rgba(255, 255, 255, 0.2);
@@ -33,12 +53,18 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
+        .slider-container{
+            max-width: 1240px;
+            width: 92.5%;
+            padding-top: 0;
+            margin: 0 auto;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-r text-gray-800">
+<body class="bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800">
     <!-- Navbar -->
     <nav class="bg-[#00A587] text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="flex justify-between items-center px-6 slider-container">
             <div class="flex items-center">
                 <img src="img/pf_logo.svg" alt="PEPPERL-FUCHS Logo" class="h-10 mr-3">
                 <span class="text-xl font-semibold">PEPPERL+FUCHS</span>
@@ -53,17 +79,47 @@
     </nav>
 
     <!-- Product Details -->
-    <main class="py-10 px-6">
-        <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
-            <img src="img/product.png" alt="Fieldbus Barrier RD0-FB-Ex4.* Product Image" class="mx-auto rounded-lg mb-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-4">Fieldbus Barrier RD0-FB-Ex4.*</h1>
-            <p class="text-gray-600 mb-4">FieldConnex® Fieldbus</p>
+    <main class="py-10 px-6 container_main">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+
+            <!-- Product Image -->
+            <div class="mb-6">
+                <img src="img/product.png" alt="Fieldbus Barrier RD0-FB-Ex4.*" class="rounded-lg shadow-lg">
+            </div>
+
+            <!-- Product Information -->
+            <div class="">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Fieldbus Barrier RD0-FB-Ex4.*</h1>
+                <p class="text-gray-600 text-lg mb-6">FieldConnex® Fieldbus</p>
+            </div>
+
+            <!-- Product Features -->
+            <ul class="text-gray-800 list-disc list-inside space-y-2 mb-6">
+                <li>4 outputs Ex ia IIC</li>
+                <li>FieldBarrier in Zone 1/Div. 2</li>
+                <li>Instruments in Zone 0...1/Div. 1</li>
+                <li>Short circuit current limitation per output</li>
+                <li>For FOUNDATION Fieldbus H1 and PROFIBUS PA</li>
+                <li>Power, Com, and Error LEDs</li>
+                <li>Supports FISCO and Entity</li>
+                <li>Integrated cable tie-downs</li>
+                <li>Supports all grounding methods</li>
+            </ul>
+
+            <!-- Product Icons -->
+            <div class="flex justify-center space-x-4">
+                <img src="https://files.pepperl-fuchs.com/webcat/navi/productInfo/pd/a100037a.svg" alt="Icon 1" class="w-12 h-12">
+                <img src="https://files.pepperl-fuchs.com/webcat/navi/productInfo/pd/a100038a.svg" alt="Icon 2" class="w-12 h-12">
+                <img src="https://files.pepperl-fuchs.com/webcat/navi/productInfo/pd/b100547c.svg" alt="Icon 3" class="w-12 h-12">
+                <img src="https://files.pepperl-fuchs.com/webcat/navi/productInfo/pd/a100550b.svg" alt="Icon 4" class="w-12 h-12">
+                <img src="https://files.pepperl-fuchs.com/webcat/navi/productInfo/pd/a100170c.svg" alt="Icon 5" class="w-12 h-12">
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2024 PEPPERL+FUCHS. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2024 PEPPERL-FUCHS. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
